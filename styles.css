@@ -1,0 +1,217 @@
+/* Stile generale */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /*font-family: Arial, sans-serif;*/
+    /*font-family:cursive;*/
+    padding: 0;
+    user-select: none;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: center; /* Centra il titolo */
+    align-items: center;
+    background: #505050;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.login-icon
+{
+    text-decoration: none !important;
+    display: flex;
+    align-items: center;  /* Centra verticalmente l'icona e il testo */
+    gap: 2px;  /* Distanza tra l'icona e il testo */
+    margin-top: 1px;
+    color: #f2c64d;  /* Colore normale */
+    font-size: 1.2em;  /* Dimensione del testo e dell'icona */
+}
+
+.login-icon:hover {
+    color: #f1c96b;  /* Colore al passaggio del mouse */
+    transform: scale(1.1);
+}
+
+
+
+.logo {
+    font-family:cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Icone */
+.icons {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Menu a tendina */
+nav {
+    position: fixed; /* Isola il menu dal layout */
+    top: 60px;
+    right: 20px;
+    background: #444;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background: #666;
+    border-radius: 3px;
+}
+
+/* Mostra il menu */
+nav.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Main e contenuti */
+main {
+    padding: 20px;
+    flex: 1;
+    background: url('Images/sfondo.jpg') no-repeat center center; /* Imposta l'immagine di sfondo */
+    background-size: cover; /* Copre l'intera area */
+    color: #fff;
+}
+
+.examples {
+    text-align: center;
+}
+
+.example-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+.example {
+    text-align: center;
+}
+
+.example img {
+    width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.example img:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+}
+
+.example p {
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Contatti */
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item img {
+    max-width: 150px; /* Limita la larghezza massima */
+    height: auto; /* Mantiene le proporzioni */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Per un tocco più carino */
+    transition: transform 0.3s ease;
+}
+
+.contact-item img {
+    max-width: 150px; /* Limita la larghezza massima */
+    height: auto; /* Mantiene le proporzioni */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Per un tocco più carino */
+    transition: transform 0.3s ease;
+}
+
+.contact-item img:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+}
+
+.contact-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f4f4f4;
+}
+
+
+/* Footer */
+footer {
+    background: #505050;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 0.7em;
+}
+
+footer section {
+    margin: 10px 0;
+}
+
+
+
+/*
+@media (max-width: 480px) {
+    .login-icon {
+        font-size: 1em; /* Riduce la dimensione dell'icona e del testo su schermi piccoli *
+        gap: 3px;  /* Riduce la distanza tra icona e testo *
+    }
+}
+
+@media (max-width: 768px) {
+    .login-icon {
+        font-size: 1.1em; /* Leggero ridimensionamento su schermi medi *
+    }
+}  
+*/
