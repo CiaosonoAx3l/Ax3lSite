@@ -1,22 +1,28 @@
 /* Stili generali */
-body {
+html, body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
     padding: 0;
+    height: 100%;  /* Imposta altezza al 100% per l'intera pagina */
+    margin: 0;  /* Rimuove margini predefiniti */
+    display: flex;
+    flex-direction: column;  /* Rende il body un contenitore flex */
 }
 
-header {
+header,a {
+    text-decoration: none; 
     display: flex;
     justify-content: center; /* Centra il titolo */
     align-items: center;
     background: #505050;
     color: #fff;
-    padding: 10px 20px;
+    padding: 5px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
+
+
 
 
 
@@ -58,36 +64,120 @@ ul {
     color: #007BFF;
 }
 
+
+
 .button {
-    background-color: #007BFF;
+    background-color: #0a0a0a !important;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    display: block;  /* Cambiato da inline-block a block */
+    margin: 0 auto;  /* Centra orizzontalmente */
+    text-align: center;  /* Assicura che il testo sia centrato */
+    width: fit-content;  /* La larghezza si adatta al contenuto */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;  /* Cambia il cursore per far capire che è cliccabile */
 }
 
+.button:hover {
+    background-color: #222222;
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Effetto ombra leggera */
+}
+
+
+
 footer {
-    background-color: #333;
+    background: #505050;
     color: white;
     text-align: center;
     padding: 10px 0;
+    margin-top: auto;  /* Spinge il footer verso il fondo della pagina */
 }
 
-.back-home {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.back-home .button {
-    background-color: #28a745; /* Colore verde per il pulsante */
+/* Icone */
+.icons {
     color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 1.1em;
-    display: inline-block;
+    padding: 3px 8px; /* Dimensioni compatte */
+    border-radius: 3px; /* Angoli leggermente arrotondati */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-size: 0.8em; /* Testo compatto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Rimane fisso */
+    left: 15px; /* Distanza dal bordo destro */
+    top: 10px; /* Distanza dall'alto */
+    z-index: 1000; /* Sempre visibile sopra gli altri elementi */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.back-home .button:hover {
-    background-color: #218838; /* Colore al passaggio del mouse */
+.menu-icon {
+    cursor: pointer; /* Cambia cursore */
+    color: white;
+    text-decoration: none; /* Niente sottolineatura */
+}
+
+.menu-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Ridimensionamento per schermi stretti */
+@media (max-width: 400px) {
+    .icons {
+        padding: 2px 6px; /* Riduce il padding */
+        font-size: 0.7em; /* Testo più piccolo */
+        left: 7px; /* Avvicina al bordo destro */
+        top: 20px; /* Avvicina al bordo superiore */
+    }
+}
+
+
+
+
+
+
+
+/* Contatti */
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact a{
+    background: none;
+}
+
+.contact-item img {
+    max-width: 150px; /* Limita la larghezza massima */
+    height: auto; /* Mantiene le proporzioni */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Per un tocco più carino */
+    transition: transform 0.3s ease;
+}
+
+.contact-item img {
+    max-width: 150px; /* Limita la larghezza massima */
+    height: auto; /* Mantiene le proporzioni */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Per un tocco più carino */
+    transition: transform 0.3s ease;
+}
+
+.contact-item img:hover {
+    transform: scale(1.1); /* Ingrandisce leggermente al passaggio del mouse */
+}
+
+.contact-item p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f4f4f4;
 }
