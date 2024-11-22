@@ -157,3 +157,27 @@ footer {
     font-weight: bold;
     color: #f4f4f4;
 }
+
+.paragrafo {
+    display: block; /* Cambia da inline-block a block per permettere il centramento */
+    margin: 0 auto 10px; /* Auto su entrambi i lati per centrare */
+    padding: 10px 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    background-color: #f9f9f9; /* Colore di sfondo leggero */
+    border: 1px solid #ddd; /* Bordo sottile e chiaro */
+    border-radius: 8px; /* Angoli arrotondati */
+    max-width: 600px; /* Larghezza massima per centrare l'attenzione */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+}
+
+.link {
+    color: #007bff; /* Colore blu, puoi cambiarlo */
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #0056b3; /* Colore al passaggio del mouse */
+}
