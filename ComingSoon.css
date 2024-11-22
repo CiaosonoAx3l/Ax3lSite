@@ -1,0 +1,63 @@
+/* Reset margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* Full-screen container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #000000);
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+/* Styling for the main container */
+.coming-soon-container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Link style for "Coming Soon" */
+.home-link {
+    text-decoration: none; /* Rimuove la sottolineatura */
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.home-link:hover {
+    color: #000000; /* Cambia colore al passaggio del mouse */
+}
+
+/* Heading style */
+.coming-soon-container h1 {
+    font-size: 4rem;
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Paragraph style */
+.coming-soon-container p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    opacity: 0.8;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
