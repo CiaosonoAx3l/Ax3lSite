@@ -109,12 +109,6 @@ footer {
     }
 }
 
-
-
-
-
-
-
 /* Contatti */
 
 .contact-options {
@@ -155,7 +149,7 @@ footer {
 .contact-item p {
     margin-top: 10px;
     font-weight: bold;
-    color: #f4f4f4;
+    color: #000000;
 }
 
 .paragrafo {
