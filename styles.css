@@ -214,3 +214,25 @@ footer section {
     }
 }  
 */
+
+/*bottone per la mail*/
+
+.button {
+    background-color: #0a0a0a !important;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;  /* Cambiato da inline-block a block */
+    margin: 0 auto;  /* Centra orizzontalmente */
+    text-align: center;  /* Assicura che il testo sia centrato */
+    width: fit-content;  /* La larghezza si adatta al contenuto */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;  /* Cambia il cursore per far capire che è cliccabile */
+}
+
+.button:hover {
+    background-color: #222222;
+    transform: scale(1.1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Effetto ombra leggera */
+}
