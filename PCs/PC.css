@@ -1,7 +1,7 @@
 /* Stili generali */
 html, body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 0;
     height: 100%;  /* Imposta altezza al 100% per l'intera pagina */
     margin: 0;  /* Rimuove margini predefiniti */
@@ -129,7 +129,7 @@ footer {
 .contact-item img {
     max-width: 150px; /* Limita la larghezza massima */
     height: auto; /* Mantiene le proporzioni */
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 10px; /* Per un tocco più carino */
     transition: transform 0.3s ease;
 }
@@ -137,7 +137,7 @@ footer {
 .contact-item img {
     max-width: 150px; /* Limita la larghezza massima */
     height: auto; /* Mantiene le proporzioni */
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 10px; /* Per un tocco più carino */
     transition: transform 0.3s ease;
 }
@@ -159,7 +159,7 @@ footer {
     font-size: 14px;
     line-height: 1.5;
     text-align: center;
-    background-color: #f9f9f9; /* Colore di sfondo leggero */
+    background-color: white; /* Colore di sfondo leggero */
     border: 1px solid #ddd; /* Bordo sottile e chiaro */
     border-radius: 8px; /* Angoli arrotondati */
     max-width: 600px; /* Larghezza massima per centrare l'attenzione */
