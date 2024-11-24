@@ -56,3 +56,48 @@
 #consigli-utili ul li a:hover {
     text-decoration: underline;
 }
+
+/* Stile per la sezione Upgrade Estetico */
+#upgrade-estetico {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#upgrade-estetico h2 {
+    color: #005f99;
+}
+
+#upgrade-estetico .paragrafo {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Stile per l'immagine dell'upgrade estetico */
+.upgrade-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upgrade-img:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 430px) 
+{
+    #upgrade-estetico {
+        box-shadow: none;
+    }
+    
+
+}
