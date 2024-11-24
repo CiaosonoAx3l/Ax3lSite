@@ -54,7 +54,7 @@ let slideIndex = 0;
     function startAutoSlide(slideshowId) {
         setInterval(function() {
             plusSlides(1, slideshowId); // Cambia automaticamente la slide ogni 10 secondi
-        }, 10000); // 10 secondi = 10000 millisecondi
+        }, 15000); // 10 secondi = 10000 millisecondi
     }
 
     // Avvia lo slideshow automatico per ogni configurazione
