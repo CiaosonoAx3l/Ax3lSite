@@ -3,14 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="../ComingSoon.css">
+    <title>I Miei Lavori</title>
+    <link rel="stylesheet" href="CSS aggiuntivi/Upgrade.css">
+    <link rel="stylesheet" href="Work.css">
+    <link rel="stylesheet" href="../PCs/PC.css">
+    <script src="Funzioni.js"></script>
+    
 </head>
 <body>
-    <div class="coming-soon-container">
-        <a href="../index.html" class="home-link">
-            <h1>Coming Soon</h1>
-            <p>Sto ancora lavorando a questa parte di sito</p> 
-    </div>
-</body> 
+    <header>
+        <a href="../index.html" class="logo">Ax3l's Site</a>
+        <div class="icons"> 
+            <a href="../index.html" class="menu-icon">←</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="mywork">
+            <h2 style="text-align: center;">Ecco alcuni dei miei lavori:</h2>
+
+            <!-- Build 1 -->
+            <div class="build">
+                <h3>PC Gaming "Build 1"</h3>
+                <div class="slideshow-container" id="slideshow-1">
+                    <div class="slide fade" style="display: block;">
+                        <img src="../Images/20241120_150245.jpg" alt="Foto Build 1">
+                    </div>
+                    <div class="slide fade" style="display: none;">
+                        <img src="../Images/sfondo.jpg" alt="Foto Build 1">
+                    </div>
+                    <div class="slide fade" style="display: none;">
+                        <img src="../Images/20241120_150245.jpg" alt="Foto Build 1">
+                    </div>
+                
+                    <!-- Pulsanti per navigare manualmente -->
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                
+                <p><strong>Componenti:</strong><br>
+                    - CPU: Intel Core i7-12700K<br>
+                    - GPU: NVIDIA RTX 3080<br>
+                    - RAM: 16GB DDR4<br>
+                    - SSD: 1TB NVMe<br>
+                    - Alimentatore: 750W Gold</p>
+            </div>
+
+            <!-- Build 2 -->
+            <div class="build">
+                <h3>PC da Studio "Build 2"</h3>
+                <div class="slideshow-container" id="slideshow-2">
+                    <div class="slide fade" style="display: block;">
+                        <img src="../Images/20241120_150245.jpg" alt="Foto Build 2">
+                    </div>
+                    <div class="slide fade" style="display: none;">
+                        <img src="../Images/sfondo.jpg" alt="Foto Build 2">
+                    </div>
+                
+                    <!-- Pulsanti per navigare manualmente -->
+                    <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+                </div>
+                <p><strong>Componenti:</strong><br>
+                    - CPU: AMD Ryzen 9 5900X<br>
+                    - GPU: AMD Radeon RX 6800 XT<br>
+                    - RAM: 32GB DDR4<br>
+                    - SSD: 2TB NVMe<br>
+                    - Alimentatore: 850W Platinum</p>
+            </div>
+
+            <!-- Build 3 -->
+            <div class="build">
+                <h3>PC Streaming "Build 3"</h3>
+                <!-- Slideshow per la Build 3 -->
+                <div class="slideshow-container" id="slideshow-3">
+                    <div class="slide fade" style="display: block;">
+                        <img src="../Images/20241120_150245.jpg" alt="Foto Build 3">
+                    </div>
+                <div class="slide fade" style="display: none;">
+                    <img src="../Images/sfondo.jpg" alt="Foto Build 3">
+                </div>
+
+            <!-- Pulsanti per navigare manualmente -->
+            <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 3)">&#10095;</a>
+            </div>
+
+                <p><strong>Componenti:</strong><br>
+                    - CPU: Intel Core i5-11600K<br>
+                    - GPU: NVIDIA RTX 3060 Ti<br>
+                    - RAM: 16GB DDR4<br>
+                    - SSD: 1TB NVMe<br>
+                    - Alimentatore: 650W Gold</p>
+            </div>
+
+            <!-- Build 4 
+            <div class="build">
+                <h3>PC All-In-One "Build 4"</h3>
+                <div class="slideshow-container">
+                    <div class="slide fade">
+                        <img src="../Images/PCAllInOneBuild4_1.jpg" alt="Foto Build 4">
+                    </div>
+                </div>
+                <p><strong>Componenti:</strong><br>
+                    - CPU: AMD Ryzen 7 3700X<br>
+                    - GPU: Integrata<br>
+                    - RAM: 8GB DDR4<br>
+                    - SSD: 512GB SATA<br>
+                    - Alimentatore: 550W Bronze</p>
+            </div>-->
+
+            <section id="consigli-utili">
+                <h2>Ne vuoi una simile?</h2>
+                <p>Se hai bisogno di un consiglio personalizzato o vuoi vedere altre configurazioni, consulta le seguenti pagine:</p>
+                    <br><a href="../PCs/PCGaming.html" class="link">PC da Gaming</a><br><br>
+                    <a href="../PCs/PCStudio.html" class="link">PC da Studio</a><br><br>
+                    <a href="../PCs/PCStreaming.html" class="link">PC da Streaming</a>
+            </section>
+
+            <section id="contatti" class="contact">
+                <h2>Contattami</h2>
+                <p>Ti aiuterò a scegliere la miglior configurazione per le tue esigenze.</p>
+                <br>
+                <div class="contact-options">
+                    <div class="contact-item">
+                        <a href="https://wa.me/qr/CNDNWUGX7ZX7E1">
+                            <img style="margin-top: 50px; margin-bottom: 24px;" src="../Images/WhatsApp.jpg" alt="QR Code WhatsApp">
+                        </a>
+                        <p>WhatsApp</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <a href="https://t.me/CiaosonoAx3l">
+                            <img src="../Images/Telegram.jpg" alt="QR Code Telegram">
+                        </a>
+                        <p>Telegram</p>
+                    </div>
+                </div>
+                <br>
+                <a href="mailto:Ax3lBuild@gmail.com" class="button">o contattami via mail</a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Ax3l's Site. Tutti i diritti riservati.</p>
+    </footer>
+</body>
 </html>
