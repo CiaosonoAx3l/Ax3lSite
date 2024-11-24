@@ -1,4 +1,17 @@
 /* Stili per la classe assistenza */
+a {
+    text-decoration: none; 
+    display: flex;
+    justify-content: center; /* Centra il titolo */
+    align-items: center;
+    background: #505050;
+    color: #fff;
+    padding: 5px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .assistenza {
     background-color: #f4f4f9; /* Colore di sfondo chiaro per separare visivamente la sezione */
     padding: 30px; /* Distanza interna per migliorare la leggibilità */

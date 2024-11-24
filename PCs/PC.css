@@ -10,7 +10,7 @@ html, body {
     user-select: none !important;
 }
 
-header,a {
+header {
     text-decoration: none; 
     display: flex;
     justify-content: center; /* Centra il titolo */
@@ -21,6 +21,11 @@ header,a {
     position: sticky;
     top: 0;
     z-index: 1000;
+}
+
+a {
+    color: #fff;
+    text-decoration: none; 
 }
 
 .logo {

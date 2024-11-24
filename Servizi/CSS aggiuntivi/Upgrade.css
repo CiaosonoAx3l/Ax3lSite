@@ -1,0 +1,58 @@
+/* Stile per #introduzione */
+#introduzione {
+    background-color: #e8f4fc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#introduzione h2 {
+    text-align: center;
+    color: #005f99;
+}
+
+/* Stile per #guida-upgrade */
+#guida-upgrade ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#guida-upgrade ul li {
+    margin: 10px 0;
+}
+
+#guida-upgrade strong {
+    color: #444;
+}
+
+/* Stile per #limitazioni */
+#limitazioni {
+    background-color: #fdf4e3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#limitazioni h2 {
+    text-align: center;
+    color: #d98803;
+}
+
+/* Stile per #consigli-utili */
+#consigli-utili ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#consigli-utili ul li {
+    margin: 10px 0;
+}
+
+#consigli-utili ul li a {
+    color: #005f99;
+    text-decoration: none;
+}
+
+#consigli-utili ul li a:hover {
+    text-decoration: underline;
+}
