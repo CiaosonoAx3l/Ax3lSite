@@ -106,7 +106,9 @@ nav.active {
 main {
     padding: 20px;
     flex: 1;
-    background: url('Images/sfondo.jpg') no-repeat center center; /* Imposta l'immagine di sfondo */
+    /*background: url('Images/sfondo.jpg') no-repeat center center;  Imposta l'immagine di sfondo */
+    background: linear-gradient(135deg, #606060, #000000);
+    animation: fadeIn 2s ease-in-out;
     background-size: cover; /* Copre l'intera area */
     color: #fff;
 }
@@ -131,6 +133,7 @@ main {
     width: 150px;
     height: auto;
     border: 1px solid #ccc;
+    margin: 10px;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
@@ -139,8 +142,22 @@ main {
 }
 
 .example p {
+    font-size: 18px;
     margin: 0;
     font-weight: bold;
+}
+
+@media (min-width: 950px) /*dopo 750px di larghezza)*/
+{
+    .example img {
+        width: 70%; /* Si adatta alla dimensione del contenitore */
+        height: auto; /* Mantiene le proporzioni */
+        margin: 4%;
+    }
+
+    .example p {    
+        font-size: 150%;
+    }
 }
 
 /* Contatti */
@@ -231,7 +248,7 @@ footer section {
 /*bottone per la mail*/
 
 .button {
-    background-color: #0a0a0a !important;
+    background-color: #000000 !important;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -249,3 +266,4 @@ footer section {
     transform: scale(1.1);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Effetto ombra leggera */
 }
+
