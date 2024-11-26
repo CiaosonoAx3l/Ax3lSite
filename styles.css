@@ -252,6 +252,7 @@ footer section {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    border: 0.5px solid #ccc;
     border-radius: 5px;
     display: block;  /* Cambiato da inline-block a block */
     margin: 0 auto;  /* Centra orizzontalmente */
