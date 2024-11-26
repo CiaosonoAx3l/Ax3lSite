@@ -184,6 +184,19 @@ main {
     color: #f4f4f4;
 }
 
+/*contatti piccoli*/
+@media (max-width: 340px) {
+    .contact-options {
+        flex-direction: column; /* Cambia il layout da orizzontale a verticale */
+        align-items: center; /* Centra gli elementi */
+    }
+
+    .contact-item img {
+        max-width: 100%; /* Adatta la larghezza delle immagini alla dimensione dello schermo */
+        max-width: 150px; /* Mantiene la larghezza impostata */
+        height: auto; /* Preserva le proporzioni */
+    }
+}
 
 /* Footer */
 footer {
